@@ -12,7 +12,7 @@ class WallServiceTest {
         val result2 = WallService.newId()
 
         // assert
-        if ((result2 - result1) == 2)
+        if ((result2 - result1) == 1)
             assert(true)
         else
             assert(false)
@@ -36,7 +36,7 @@ class WallServiceTest {
     @Test
     fun updateTrue() {
         // arrange
-        val id = 3
+        val id = 2
         val post1 = Post(id = 1, text = "text one")
         val post2 = Post(id = 2, text = "text two")
 
@@ -55,7 +55,7 @@ class WallServiceTest {
     @Test
     fun updateFalse() {
         // arrange
-        val id = 1
+        val id = 3
         val post1 = Post(id = 1, text = "text one")
         val post2 = Post(id = 2, text = "text two")
 
