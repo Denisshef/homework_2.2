@@ -55,7 +55,7 @@ class WallServiceTest {
     @Test
     fun updateFalse() {
         // arrange
-        val id = 3
+        val id = 1
         val post1 = Post(id = 1, text = "text one")
         val post2 = Post(id = 2, text = "text two")
 
