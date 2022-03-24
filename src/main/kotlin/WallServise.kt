@@ -1,5 +1,7 @@
+
 object WallService {
     var posts = emptyArray<Post>()
+    var arr = emptyArray<Attach>()
     private var id: Int = 1
 
     fun add(post: Post): Post {

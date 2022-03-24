@@ -8,10 +8,10 @@ data class Post(
     val reply_owner_id: Int = 1,
     val reply_post_id: Int = 1,
     val friends_only: Boolean = true,
-    val comments: Comments? = Comments(),
-    val copyright: Copyright? = Copyright(),
-    val likes: Likes? = Likes(),
-    val reposts: Reposts? = Reposts(),
+    val comments: Comments? = null,
+    val copyright: Copyright? = null,
+    val likes: Likes = Likes(),
+    val reposts: Reposts? = null,
     val views: Int = 0,
     val post_type: String = "post",
     val can_pin: Boolean = false,
@@ -21,7 +21,8 @@ data class Post(
     val marked_as_ads: Boolean = false,
     val is_favorite: Boolean = false,
     val donut: Donut? = Donut(),
-    val postponed_id: Int = 1
+    val postponed_id: Int = 1,
+    val attachment: Array<Attach>? = null
 ) {
 
     data class Comments(

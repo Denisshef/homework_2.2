@@ -1,7 +1,10 @@
 fun main() {
+    val att = arrayOf(Attach("video"), AttachmentsPhoto("photo"))
+
     val postOne = Post(
         id = WallService.newId(),
-        text = "Text article one"
+        text = "Text article one",
+        attachment = att
     )
 
     val postTwo = Post(
