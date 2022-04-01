@@ -1,10 +1,10 @@
 data class Post(
-    val id: Int,
+    val id: Int = 0,
     val owner_id: Int = 1,
     val from_id: Int = 12,
     val created_by: Int = 5,
     val date: Int = 2022,
-    val text: String,
+    val text: String = "",
     val reply_owner_id: Int = 1,
     val reply_post_id: Int = 1,
     val friends_only: Boolean = true,
@@ -60,6 +60,6 @@ data class Post(
     )
 
     override fun toString(): String {
-        return "Text post = $text"
+        return "Post id = $id"
     }
 }
