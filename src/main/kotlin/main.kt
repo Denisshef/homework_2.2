@@ -3,6 +3,7 @@ fun main() {
     val firstPost = WallService.add(Post(attachment = att))
     val secondPost = WallService.add(Post())
 
-    println(WallService.update(firstPost))
+    WallService.createComment(Comments(post_id = 3))
+    WallService.update(firstPost)
 }
 

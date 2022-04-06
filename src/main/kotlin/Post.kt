@@ -25,14 +25,6 @@ data class Post(
     val attachment: Array<Attach>? = null
 ) {
 
-    data class Comments(
-        val count: Int = 0,
-        val can_post: Boolean = false,
-        val groups_can_post: Boolean = false,
-        val can_close: Boolean = false,
-        val can_open: Boolean = false
-    )
-
     data class Copyright(
         val id: Int = 0,
         val link: String = "link",

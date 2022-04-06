@@ -37,4 +37,29 @@ class WallServiceTest {
         // assert
         assertFalse(result)
     }
+
+    @Test
+    fun createComment() {
+        // arrange
+        WallService.add(Post())
+        val idComment = 1
+
+        // act
+        val result = WallService.createComment(Comments(post_id = idComment))
+
+        // assert
+        assertTrue(result)
+    }
+
+    @Test(expected = PostNotFoundException::class)
+    fun shouldThrowException() {
+        // arrange
+        val idComment = 4
+
+        // act
+        val result = WallService.createComment(Comments(post_id = idComment))
+
+        // assert
+    }
+
 }
