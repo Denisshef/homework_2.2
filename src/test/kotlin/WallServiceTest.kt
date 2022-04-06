@@ -58,8 +58,6 @@ class WallServiceTest {
 
         // act
         val result = WallService.createComment(Comments(post_id = idComment))
-
-        // assert
     }
 
 }
